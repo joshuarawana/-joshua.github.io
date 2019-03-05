@@ -132,21 +132,21 @@ dessertsImages = [
 ]
 
 appetizersDivs = [
-     '<div class="item"><p>Stuffed Patatoes <span class="price">$9</span><br /><small>Stuffed Patatoes with bacon from your mom\'\s house </small></p></div>',
-    '<div class="item"><p>Buffalo Wings <span class="price">$5 for 5</span><br /><small>Wings made in the backstreets.</small></p></div>',
-    '<div class="item"><p>Sausage with Bacon <span class="price">$4 for 10 </span><br /><small>The world may never know </small></p></div>',
+     '<div class="item"onclick=this.classList.toggle("show-description")><p>Stuffed Patatoes <span class="price">$9</span><br /><small>Stuffed Patatoes with bacon from your mom\'\s house </small></p></div>',
+    '<div class="item"onclick=this.classList.toggle("show-description")><p>Buffalo Wings <span class="price">$5 for 5</span><br /><small>Wings made in the backstreets.</small></p></div>',
+    '<div class="item"onclick=this.classList.toggle("show-description")><p>Sausage with Bacon <span class="price">$4 for 10 </span><br /><small>The world may never know </small></p></div>',
 ]
 
 entreesDivs = [
-  '<div class="item"><p>Shrimp Alfredo <span class="price">$30</span><br /><small>This shrimp alfredo pasta is made with fettuccine in a creamy parmesan sauce, topped with sauteed garlic shrimp. </small></p></div>',
-    '<div class="item"><p>Spagetti with Meatballs <span class="price">$15</span><br /><small>Juicy goodness of meat, onions, breadcrumbs, egg, butter, and Parmigiano-Reggiano, soaked in red sauce over a pile of spaghetti.</small></p></div>',
-    '<div class="item"><p>Grilled Surf and Turf <span class="price">$40</span><br /><small>A delicious, juicy steak also made at your mom\'\s house with her love. </small></p></div>',
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Shrimp Alfredo <span class="price">$30</span><br /><small>This shrimp alfredo pasta is made with fettuccine in a creamy parmesan sauce, topped with sauteed garlic shrimp. </small></p></div>',
+    '<div class="item"onclick=this.classList.toggle("show-description")><p>Spagetti with Meatballs <span class="price">$15</span><br /><small>Juicy goodness of meat, onions, breadcrumbs, egg, butter, and Parmigiano-Reggiano, soaked in red sauce over a pile of spaghetti.</small></p></div>',
+    '<div class="item"onclick=this.classList.toggle("show-description")><p>Grilled Surf and Turf <span class="price">$40</span><br /><small>A delicious, juicy steak also made at your mom\'\s house with her love. </small></p></div>',
 ]
 
 dessertsDivs = [
-  '<div class="item"><p>Cheesecake With Strawberries on Top <span class="price">$40</span><br /><small>Pureed strawberries are added to the creamy batter for this strawberry cheesecake with graham cracker crust. </small></p></div>',
-    '<div class="item"><p>Brownies <span class="price">$6 for 4</span><br /><small>Delicious Brownies made with a little kick ;).</small></p></div>',
-    '<div class="item"><p>Oreo Cakes <span class="price">$10 for 5</span><br /><small>Delicious oreo cakes made with a grandmother\'\s love. </small></p></div>',
+  '<div class="item"onclick=this.classList.toggle("show-description")><p>Cheesecake With Strawberries on Top <span class="price">$40</span><br /><small>Pureed strawberries are added to the creamy batter for this strawberry cheesecake with graham cracker crust. </small></p></div>',
+    '<div class="item"onclick=this.classList.toggle("show-description")><p>Brownies <span class="price">$6 for 4</span><br /><small>Delicious Brownies made with a little kick ;).</small></p></div>',
+    '<div class="item"onclick=this.classList.toggle("show-description")><p>Oreo Cakes <span class="price">$10 for 5</span><br /><small>Delicious oreo cakes made with a grandmother\'\s love. </small></p></div>',
 ]
 
 function appetizers() {
@@ -192,9 +192,6 @@ function desserts() {
   items[2].style.background = dessertsImages[2]
 }
 
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
 </script>
 
 </body>
