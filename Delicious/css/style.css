@@ -7,13 +7,13 @@
 
 @media (max-width: 500px) {
 	.container {
-		patting: 0;
+		padding: 0;
 		margin: 0;
 		overflow: hidden;
 	}
 
 	.row {
-		patting: 0;
+		padding: 0;
 		margin: 0;
 		overflow: hidden;
 	}
