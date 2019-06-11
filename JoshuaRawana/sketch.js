@@ -118,6 +118,14 @@ function draw() {
   if (keyIsDown(DOWN_ARROW)) {
      y=y+10
    }
+  if (touches.length == 0)   {
+	  else { 
+		x = touches[0].x
+		y = touches[0].y
+	}
+
+}
+
   
   if(c*s>width || c*s<0){
     direction_h_2=direction_h_2*-1
